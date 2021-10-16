@@ -1,6 +1,6 @@
 A small demonstration of Java scripting using the Groovy library.
 
-Advantages over [beanshell](https://github.com/beanshell/beanshell):
+Advantages:
 
 - Project maintenance guaranteed
 - Good docs
