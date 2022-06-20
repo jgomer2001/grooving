@@ -28,7 +28,9 @@ About the "Integrating Groovy into applications" page:
 reloading is handled automatically. Plain `GroovyClassLoader` is fine when using a single standalone script. In this case reloading can be done by using `parseClass`.
 
 A couple of lessons learned:
+ 
+- Dependant scripts must follow the convention of classes and directory naming of Java so they can be `import`ed. As an example, class `Hello` of package `there` should be stored in a file named `Hello.groovy` inside `There` directory which should be under the root of the engine instance obtained. It does not have to be written in idiomatic Groovy, classic Java is OK.
 
-- The engine does not like `.java` extension for dependant scripts, only `.groovy`, however it does not mean they have to be written in idiomatic Groovy, classic Java is OK. 
-- Dependant scripts must follow the convention of classes and directory naming of Java so they can be `import`ed. As an example, class `Hello` of package `there` should be stored in a file named `Hello.groovy` inside `There` directory which should be under the root of the engine instance obtained
 - The (main) script to run (via `GroovyScriptEngine#run`) can use the `.java` extension and does not need to follow the naming conventions. For practical purposes the script should return something, as in the example given in the doc page.
+
+- Both `.groovy` and `.java` extensions can be used for dependant scripts. However, this requires calling `CompilerConfiguration#setScriptExtensions` on the compiler configuration associated to the script engine. Otherwise, it will only work with `.groovy` files.
