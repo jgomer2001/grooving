@@ -1,1 +1,16 @@
-{}
+{
+    "deleteme3": {
+        "projectName": "deleteme3",
+        "description": "123",
+        "type": "community",
+        "author": "jgomer2001",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/jgomer2001/grooving",
+        "githubUri": "https://github.com/jgomer2001/grooving",
+        "license": "MIT",
+        "lastUpdated": "1690806481903",
+        "tags": [
+            "jans"
+        ]
+    }
+}
