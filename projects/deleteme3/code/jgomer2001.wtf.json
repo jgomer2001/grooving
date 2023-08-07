@@ -62,9 +62,10 @@
 					"nodeColor": "",
 					"exceptionVariableField": "",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 430,
@@ -105,10 +106,16 @@
 					"comment": "",
 					"notes": "",
 					"flowfilename": "",
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "",
+							"assignedVariableName": ""
+						}
+					],
 					"callType": "Call static method",
 					"arguments": "",
-					"logMessage": "",
+					"logMessage": "\"hmmm\"",
 					"templatePath": "",
 					"maxIteration": "",
 					"idpAuthEndpoint": "",
@@ -120,14 +127,16 @@
 					"javaMethodName": "",
 					"javaVariableName": "",
 					"maxIterationVariableName": "",
-					"logLevel": "",
+					"logLevel": "info",
 					"assignCallbackResult": "",
 					"displayName": "",
 					"nodeColor": "",
-					"exceptionVariableField": ""
-				}
+					"exceptionVariableField": "",
+					"nodeIcon": "octicon:log-16"
+				},
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 230,
